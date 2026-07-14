@@ -16,8 +16,8 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Education",
+    link: "#education",
   },
 ];
 
@@ -34,8 +34,8 @@ const words = [
 
 const counterItems = [
   { value: 1, suffix: "+", label: "Years of Experience" },
-  { value: 50, suffix: "+", label: "Completed Projects" },
-  { value: 800, suffix: "+", label: "Hours of Learning" },
+  { value: 56, suffix: "+", label: "Completed Projects" },
+  { value: 40, suffix: "+", label: "LeetCode Challenges" },
   { value: 32, suffix: "%", label: "Collaborative Projects" },
 ];
 
@@ -84,29 +84,6 @@ const abilities = [
   },
 ];
 
-const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
-  },
-];
-
 const techStackIcons = [
   {
     name: "React Developer",
@@ -147,48 +124,13 @@ const expCards = [
     // imgPath: "/images/experience/githubExp.png",
     logoPath: "/images/experience/github.png",
     title: "Frontend Developer",
+    company: "Personal Projects",
     date: "November 2024 — Present",
     responsibilities: [
       "Developed real-world projects to strengthen coding skills, apply new technologies, and create responsive, user-friendly interfaces.",
       "Engaged in daily LeetCode practice to refine problem-solving abilities and enhance coding efficiency.",
       "Collaborated with UI/UX teams to design and implement responsive, user-friendly interfaces.",
     ],
-  },
-];
-
-const expLogos = [
-  // {
-  //   name: "logo1",
-  //   imgPath: "/images/logo1.png",
-  // },
-  // {
-  //   name: "logo2",
-  //   imgPath: "/images/logo2.png",
-  // },
-  // {
-  //   name: "logo3",
-  //   imgPath: "/images/logo3.png",
-  // },
-];
-
-const testimonials = [
-  {
-    name: "",
-    mentions: "",
-    review: "",
-    imgPath: "",
-  },
-  {
-    name: "",
-    mentions: "",
-    review: "",
-    imgPath: "",
-  },
-  {
-    name: "",
-    mentions: "",
-    review: "",
-    imgPath: "",
   },
 ];
 
@@ -215,16 +157,40 @@ const socialImgs = [
   },
 ];
 
+const eduCards = [
+  {
+    review:
+      "I completed several hands-on certifications through freeCodeCamp, where I focused on building real-world projects that strengthened my front-end skills.",
+    // imgPath: "/images/experience/githubExp.png",
+    logoPath: "/images/experience/freeCodeCamp.png",
+    company: "Free Code Camp",
+    date: "July 2024 — Present",
+    responsibilities: [
+      "Completed certifications in Responsive Web Design, JavaScript Algorithms and Data Structures, and Front-End Development Libraries through hands-on projects.",
+      "Built responsive and accessible web applications using HTML, CSS, JavaScript, and React.",
+    ],
+  },
+  {
+    review:
+      "I earned my high school diploma in Afghanistan, where I established a strong academic foundation and honed the self-discipline that continues to drive my progress in the technology field.",
+    // imgPath: "/images/experience/highschool.png",
+    logoPath: "/images/experience/highschool.png",
+    company: "High School — Afghanistan",
+    date: "March 2021 — December 2023",
+    responsibilities: [
+      "I successfully completed high school while demonstrating strong self discipline and focus.",
+    ],
+  },
+];
+
 export {
   words,
   abilities,
   logoIconsList,
   counterItems,
   expCards,
-  expLogos,
-  testimonials,
   socialImgs,
+  eduCards,
   techStackIcons,
-  techStackImgs,
   navLinks,
 };

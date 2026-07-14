@@ -2,13 +2,13 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { expCards } from "../constants";
+import { eduCards } from "../constants";
 import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Experience = () => {
+const EducationSection = () => {
   useGSAP(() => {
     gsap.utils.toArray(".timeline-card").forEach((card) => {
       gsap.from(card, {
@@ -55,17 +55,17 @@ const Experience = () => {
 
   return (
     <section
-      id="experience"
+      id="education"
       className="flex-center md:mt-40 mt-20 section-padding xl:px-0 scroll-mt-24"
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
-          title="Professional Work Experience"
-          sub="💼 My Career Overview"
+          title=""
+          sub="🎓 Where I Educated"
         />
         <div className="mt-28 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
-            {expCards.map((card) => (
+            {eduCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
@@ -81,15 +81,15 @@ const Experience = () => {
                       <div className="gradient-line w-1 h-full" />
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                      <div className="timeline-logo">
+                      <div className="timeline-logo p-2">
                         <img src={card.logoPath} alt="logo" />
                       </div>
                       <div>
-                        <h1 className="font-semibold text-3xl">{card.title}</h1>
-                        <h3 className="mt-5 mb-0 text-2xl font-semibold text-white-50">
+                        <h1 className="font-semibold text-3xl">{card.company}</h1>
+                        {/* <h3 className="mt-5 mb-0 text-2xl font-semibold text-white-50">
                           {card.company}
-                        </h3>
-                        <p className="mb-5 text-white-50">
+                        </h3> */}
+                        <p className="my-5 text-white-50">
                           🗓️&nbsp;{card.date}
                         </p>
                         <p className="text-[#839CB5] italic">
@@ -117,4 +117,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default EducationSection;
