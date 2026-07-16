@@ -19,7 +19,7 @@
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
     "@react-three/postprocessing": "^3.0.4",
-    "@tailwindcss/vite": "^4.1.4",
+    "@tailwindcss/vite": "^4.3.3",
     "gsap": "^3.12.7",
     "postprocessing": "^6.37.3",
     "react": "^19.0.0",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
-    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react": "^6.0.3",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.22.0",
     "eslint-plugin-react-hooks": "^5.2.0",
@@ -39,6 +39,6 @@
     "globals": "^16.0.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.5",
-    "vite": "^6.3.1"
+    "vite": "^8.1.5"
   }
 }
